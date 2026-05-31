@@ -10,44 +10,64 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Altura / vh - altura */
     width: 100vw;
-    /*  vw - largura */
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&h=900&q=80");
+    background-size: cover;
+    background-position: center;
 }
 
 .caixa-maior {
-    background-color: #082231f8;/*  Troca cor de fundo  */
-    width: 95%; /*  Largura  */
-    max-width: 420px; /*  Largura  Maxima */
-    opacity: 0.8;/* transparencia do item */
-    padding: 20px;
+    background-color: rgba(8, 34, 49, 0.85); /* Unificou a cor e a opacidade para o texto não ficar transparente */
+    width: 95%;
+    max-width: 420px;
+    padding: 25px;
     border-radius: 25px;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3); /* Um leve efeito de sombra para dar profundidade */
+}
+
+/* NOVA CLASSE: Envolve o input e o botão para deixá-los alinhados lado a lado */
+.caixa-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Controla a distância exata entre o input e a lupa */
+    width: 100%;
 }
 
 input {
-    border: none;/* borda do elemento */
-    outline: none;/* borda quando seleciona o elemento */
-    padding: 10px;/* espaçamento interno */
-    border-radius: 24px;/* arredonda as bordas */
-    font-size: 20px;
-    background-color: #7c7c7c2b;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: rgba(124, 124, 124, 0.2);
     color: #ffffff;
-    width: calc( 100% - 100px);
+    flex: 1; /* Faz o input ocupar todo o espaço disponível, empurrando a lupa para o lado */
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Deixa o texto do placeholder mais visível */
 }
 
 button {
     border: none;
     outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #7c7c7c6b;
-    float: right;
+    padding: 12px;
+    border-radius: 50%; /* Mantém o botão perfeitamente redondo */
+    background-color: rgba(124, 124, 124, 0.4);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease; /* Transição suave ao passar o rato */
 }
 
 button:hover {
-    background-color: #7c7c7c6b;
+    background-color: rgba(124, 124, 124, 0.6); /* Efeito de destaque ao passar o rato */
+}
+
+.lupa {
+    height: 20px;
+    width: 20px;
 }
 
 .caixa-media {
@@ -56,31 +76,31 @@ button:hover {
 
 .caixa-menor {
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     align-items: center;
-}
-
-.lupa {
-    height: 20px;
 }
 
 h2 {
     color: white;
-    font-size: 28px; /* tamanho do texto */
+    font-size: 28px;
 }
 
 .temp {
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .descricao {
     color: #ffffff;
-    margin-left: 20px;
-    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+    margin-left: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
 }
 
 .umidade {
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 16px;
 }
