@@ -1,4 +1,4 @@
-let chave = "33717a2d8b559a859d73d5ba5b289e24";
+let chave = "Copiar e cola sua chave aqui!";
 
 function colocarNaTela(dados) {
     // Se a API retornar código de erro de cidade ou autenticação
