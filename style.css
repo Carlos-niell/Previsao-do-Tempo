@@ -17,19 +17,18 @@ body {
 }
 
 .caixa-maior {
-    background-color: rgba(8, 34, 49, 0.85); /* Unificou a cor e a opacidade para o texto não ficar transparente */
+    background-color: rgba(8, 34, 49, 0.85); 
     width: 95%;
     max-width: 420px;
     padding: 25px;
     border-radius: 25px;
-    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3); /* Um leve efeito de sombra para dar profundidade */
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3); 
 }
 
-/* NOVA CLASSE: Envolve o input e o botão para deixá-los alinhados lado a lado */
 .caixa-pesquisa {
     display: flex;
     align-items: center;
-    gap: 12px; /* Controla a distância exata entre o input e a lupa */
+    gap: 12px; 
     width: 100%;
 }
 
@@ -41,28 +40,28 @@ input {
     font-size: 16px;
     background-color: rgba(124, 124, 124, 0.2);
     color: #ffffff;
-    flex: 1; /* Faz o input ocupar todo o espaço disponível, empurrando a lupa para o lado */
+    flex: 1; 
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* Deixa o texto do placeholder mais visível */
+    color: rgba(255, 255, 255, 0.6);
 }
 
 button {
     border: none;
     outline: none;
     padding: 12px;
-    border-radius: 50%; /* Mantém o botão perfeitamente redondo */
+    border-radius: 50%; 
     background-color: rgba(124, 124, 124, 0.4);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s ease; /* Transição suave ao passar o rato */
+    transition: background-color 0.2s ease; 
 }
 
 button:hover {
-    background-color: rgba(124, 124, 124, 0.6); /* Efeito de destaque ao passar o rato */
+    background-color: rgba(124, 124, 124, 0.6); 
 }
 
 .lupa {

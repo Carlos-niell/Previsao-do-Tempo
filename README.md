@@ -34,5 +34,12 @@ Para testares ou veres o código a funcionar localmente no teu computador, segue
 
 ### 1. Clonar o Repositório
 ```bash
-git clone [https://github.com/Carlos-niell/Previsao-do-Tempo.git](https://github.com/Carlos-niell/Previsao-do-Tempo.git)
-![tela-inicial](https://github.com/Carlos-niell/Previsao-do-Tempo/assets/114493985/ed010e9b-1d01-4a44-835a-e6f0c9022c43)
+git clone https://github.com/Carlos-niell/Previsao-do-Tempo.git
+```
+
+### 2. Abrir o Projeto
+- Abra `index.html` no navegador ou use um servidor local.
+
+## 🖼️ Captura de Tela
+
+![Tela inicial da aplicação](https://github.com/Carlos-niell/Previsao-do-Tempo/assets/114493985/ed010e9b-1d01-4a44-835a-e6f0c9022c43)
