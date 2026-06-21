@@ -1,7 +1,6 @@
 let chave = "Copiar e cola sua chave aqui!";
 
 function colocarNaTela(dados) {
-    // Se a API retornar código de erro de cidade ou autenticação
     if (!dados || dados.cod === "404" || dados.cod === 404 || dados.cod === "401" || dados.cod === 401) {
         document.querySelector(".cidade").innerHTML = "Cidade não encontrada";
         return;
