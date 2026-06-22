@@ -1,4 +1,4 @@
-let chave = "33717a2d8b559a859d73d5ba5b289e24";
+let chave = "Colar sua chave aqui com as aspsas";
 
 function colocarNaTela(dados) {
     if (!dados || dados.cod === "404" || dados.cod === 404 || dados.cod === "401" || dados.cod === 401) {
