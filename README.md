@@ -42,4 +42,4 @@ git clone https://github.com/Carlos-niell/Previsao-do-Tempo.git
 
 ## 🖼️ Captura de Tela
 
-![Tela inicial da aplicação](https://github.com/Carlos-niell/Previsao-do-Tempo/assets/114493985/ed010e9b-1d01-4a44-835a-e6f0c9022c43)
+![Tela inicial da aplicação]((image.png))

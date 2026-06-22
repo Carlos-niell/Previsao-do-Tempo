@@ -1,4 +1,4 @@
-let chave = "Copiar e cola sua chave aqui!";
+let chave = "33717a2d8b559a859d73d5ba5b289e24";
 
 function colocarNaTela(dados) {
     if (!dados || dados.cod === "404" || dados.cod === 404 || dados.cod === "401" || dados.cod === 401) {
@@ -16,7 +16,10 @@ function colocarNaTela(dados) {
 }
 
 async function buscarCidade(cidade) {
-    if (!cidade || !cidade.trim()) return; 
+    if (!cidade || !cidade.trim()) {
+        document.querySelector(".cidade").innerHTML = "Digite uma cidade para pesquisar";
+        return;
+    }
 
     try {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cidade)}&appid=${chave}&lang=pt_br&units=metric`;
@@ -24,6 +27,10 @@ async function buscarCidade(cidade) {
         let resposta = await fetch(url);
         
         if (!resposta.ok) {
+            if (resposta.status === 404) {
+                document.querySelector(".cidade").innerHTML = "Cidade não encontrada";
+                return;
+            }
             throw new Error(`Erro na API: ${resposta.status}`);
         }
 
@@ -43,3 +50,7 @@ function cliqueiNoBotao() {
         console.error("Input não foi encontrado no HTML!");
     }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    buscarCidade("Rio de Janeiro");
+});
